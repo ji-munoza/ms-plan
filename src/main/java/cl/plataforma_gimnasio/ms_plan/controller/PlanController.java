@@ -42,13 +42,13 @@ public class PlanController {
 
     @PostMapping
     public ResponseEntity<PlanResponseDTO> guardar(@Valid @RequestBody PlanRequestDTO dto) {
-        log.info("Solicitud recibida para crear plan: {}", dto.getNombre());
+        log.info("Solicitud recibida para crear plan: {}", dto.getNombrePlan());
 
         // Regla de negocio: Asegurar beneficio minimo obligatorio
-        if (dto.getBeneficios() == null || dto.getBeneficios().trim().isEmpty()) {
-            dto.setBeneficios("Acceso al gimnasio");
-        } else if (!dto.getBeneficios().toLowerCase().contains("acceso al gimnasio")) {
-            dto.setBeneficios("Acceso al gimnasio, " + dto.getBeneficios());
+        if (dto.getBeneficiosPlan() == null || dto.getBeneficiosPlan().trim().isEmpty()) {
+            dto.setBeneficiosPlan("Acceso al gimnasio");
+        } else if (!dto.getBeneficiosPlan().toLowerCase().contains("acceso al gimnasio")) {
+            dto.setBeneficiosPlan("Acceso al gimnasio, " + dto.getBeneficiosPlan());
         }
 
         return ResponseEntity.status(HttpStatus.CREATED).body(planService.guardar(dto));
@@ -59,10 +59,10 @@ public class PlanController {
         log.info("Solicitud recibida para actualizar plan con ID: {}", id);
 
         // Regla de negocio: Mantener beneficio minimo obligatorio al editar
-        if (dto.getBeneficios() == null || dto.getBeneficios().trim().isEmpty()) {
-            dto.setBeneficios("Acceso al gimnasio");
-        } else if (!dto.getBeneficios().toLowerCase().contains("acceso al gimnasio")) {
-            dto.setBeneficios("Acceso al gimnasio, " + dto.getBeneficios());
+        if (dto.getBeneficiosPlan() == null || dto.getBeneficiosPlan().trim().isEmpty()) {
+            dto.setBeneficiosPlan("Acceso al gimnasio");
+        } else if (!dto.getBeneficiosPlan().toLowerCase().contains("acceso al gimnasio")) {
+            dto.setBeneficiosPlan("Acceso al gimnasio, " + dto.getBeneficiosPlan());
         }
 
         PlanResponseDTO planActualizado = planService.actualizar(id, dto);

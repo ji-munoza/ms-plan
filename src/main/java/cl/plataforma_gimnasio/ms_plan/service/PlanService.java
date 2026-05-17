@@ -39,14 +39,14 @@ public class PlanService {
     }
 
     public PlanResponseDTO guardar(PlanRequestDTO dto) {
-        log.info("Iniciando registro de nuevo plan: '{}' con valor de ${}", dto.getNombre(), dto.getValor());
+        log.info("Iniciando registro de nuevo plan: '{}' con valor de ${}", dto.getNombrePlan(), dto.getValorPlan());
 
         Plan plan = new Plan();
         // Mapeo manual: desde el DTO limpio hacia el Model con sufijos de columna
-        plan.setNombrePlan(dto.getNombre());
-        plan.setDuracionPlan(dto.getDuracion());
-        plan.setValorPlan(dto.getValor());
-        plan.setBeneficiosPlan(dto.getBeneficios());
+        plan.setNombrePlan(dto.getNombrePlan());
+        plan.setDuracionPlan(dto.getDuracionPlan());
+        plan.setValorPlan(dto.getValorPlan());
+        plan.setBeneficiosPlan(dto.getBeneficiosPlan());
 
         Plan planGuardado = planRepository.save(plan);
         log.info("Plan guardado con exito. Nuevo ID asignado: {}", planGuardado.getIdPlan());
@@ -64,10 +64,10 @@ public class PlanService {
                 });
 
         // Actualizamos los campos cruzando los datos limpios del DTO
-        plan.setNombrePlan(dto.getNombre());
-        plan.setDuracionPlan(dto.getDuracion());
-        plan.setValorPlan(dto.getValor());
-        plan.setBeneficiosPlan(dto.getBeneficios());
+        plan.setNombrePlan(dto.getNombrePlan());
+        plan.setDuracionPlan(dto.getDuracionPlan());
+        plan.setValorPlan(dto.getValorPlan());
+        plan.setBeneficiosPlan(dto.getBeneficiosPlan());
 
         Plan planActualizado = planRepository.save(plan);
         log.info("Plan con ID {} actualizado con exito.", id);
@@ -91,10 +91,10 @@ public class PlanService {
     private PlanResponseDTO convertirAResponseDTO(Plan plan) {
         PlanResponseDTO response = new PlanResponseDTO();
         response.setIdPlan(plan.getIdPlan());
-        response.setNombre(plan.getNombrePlan());
-        response.setDuracion(plan.getDuracionPlan());
-        response.setValor(plan.getValorPlan());
-        response.setBeneficios(plan.getBeneficiosPlan());
+        response.setNombrePlan(plan.getNombrePlan());
+        response.setDuracionPlan(plan.getDuracionPlan());
+        response.setValorPlan(plan.getValorPlan());
+        response.setBeneficiosPlan(plan.getBeneficiosPlan());
         return response;
     }
 }

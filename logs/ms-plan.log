@@ -1,0 +1,244 @@
+2026-05-17T14:08:54.827-04:00  INFO 5656 --- [ms-plan] [main] c.p.ms_plan.MsPlanApplication            : Starting MsPlanApplication using Java 21.0.10 with PID 5656 (C:\Users\javie\OneDrive\Escritorio\proyecto semestral\ms_plan\target\classes started by javie in C:\Users\javie\OneDrive\Escritorio\proyecto semestral\ms_plan)
+2026-05-17T14:08:54.829-04:00  INFO 5656 --- [ms-plan] [main] c.p.ms_plan.MsPlanApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-05-17T14:08:55.373-04:00  INFO 5656 --- [ms-plan] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-17T14:08:55.489-04:00  INFO 5656 --- [ms-plan] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2026-05-17T14:08:55.664-04:00  INFO 5656 --- [ms-plan] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ea738f8e-4e88-3165-b6de-6e18335bb8f7
+2026-05-17T14:08:55.943-04:00  INFO 5656 --- [ms-plan] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-05-17T14:08:55.954-04:00  INFO 5656 --- [ms-plan] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-17T14:08:55.954-04:00  INFO 5656 --- [ms-plan] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-05-17T14:08:56.021-04:00  INFO 5656 --- [ms-plan] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-17T14:08:56.021-04:00  INFO 5656 --- [ms-plan] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1153 ms
+2026-05-17T14:08:56.160-04:00  INFO 5656 --- [ms-plan] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-17T14:08:56.211-04:00  INFO 5656 --- [ms-plan] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-05-17T14:08:56.239-04:00  INFO 5656 --- [ms-plan] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-17T14:08:56.465-04:00  INFO 5656 --- [ms-plan] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-17T14:08:56.491-04:00  INFO 5656 --- [ms-plan] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-17T14:08:56.614-04:00  INFO 5656 --- [ms-plan] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28e91f6d
+2026-05-17T14:08:56.616-04:00  INFO 5656 --- [ms-plan] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-17T14:08:56.650-04:00  WARN 5656 --- [ms-plan] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-17T14:08:56.655-04:00  WARN 5656 --- [ms-plan] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-17T14:08:56.668-04:00  INFO 5656 --- [ms-plan] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-17T14:08:57.334-04:00  INFO 5656 --- [ms-plan] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-17T14:08:57.402-04:00  INFO 5656 --- [ms-plan] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T14:08:57.610-04:00  WARN 5656 --- [ms-plan] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-17T14:08:57.977-04:00  INFO 5656 --- [ms-plan] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-05-17T14:08:58.003-04:00  WARN 5656 --- [ms-plan] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-17T14:08:58.038-04:00  INFO 5656 --- [ms-plan] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-17T14:08:58.057-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-17T14:08:58.061-04:00  INFO 5656 --- [ms-plan] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T14:08:58.067-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-17T14:08:58.067-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-17T14:08:58.067-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-17T14:08:58.068-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-17T14:08:58.068-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-17T14:08:58.068-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-17T14:08:58.068-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-17T14:08:58.357-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-17T14:08:58.358-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-17T14:08:58.360-04:00  INFO 5656 --- [ms-plan] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-17T14:08:58.361-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779041338360 with initial instances count: 2
+2026-05-17T14:08:58.364-04:00  INFO 5656 --- [ms-plan] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-PLAN with eureka with status UP
+2026-05-17T14:08:58.364-04:00  INFO 5656 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779041338364, current=UP, previous=STARTING]
+2026-05-17T14:08:58.365-04:00  INFO 5656 --- [ms-plan] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082: registering service...
+2026-05-17T14:08:58.381-04:00  INFO 5656 --- [ms-plan] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2026-05-17T14:08:58.381-04:00  INFO 5656 --- [ms-plan] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-05-17T14:08:58.392-04:00  INFO 5656 --- [ms-plan] [main] c.p.ms_plan.MsPlanApplication            : Started MsPlanApplication in 4.111 seconds (process running for 4.917)
+2026-05-17T14:08:58.396-04:00  INFO 5656 --- [ms-plan] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082 - registration status: 204
+2026-05-17T14:09:09.289-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-17T14:09:09.289-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-17T14:09:09.290-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-17T14:09:09.319-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-1] c.p.ms_plan.controller.PlanController    : Solicitud recibida para obtener todos los planes
+2026-05-17T14:09:09.333-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-1] c.p.ms_plan.service.PlanService          : Iniciando obtencion de todos los planes
+2026-05-17T14:09:09.484-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-1] c.p.ms_plan.controller.PlanController    : Obtenidos 5 planes
+2026-05-17T14:09:17.517-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-2] c.p.m.exception.GlobalExceptionHandler   : Error de validacion en RequestBody
+2026-05-17T14:09:17.517-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-2] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: duracion: La duración en días es obligatoria.
+2026-05-17T14:09:17.517-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-2] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: nombre: El nombre del plan es obligatorio.
+2026-05-17T14:09:17.517-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-2] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: beneficios: Los beneficios del plan son obligatorios.
+2026-05-17T14:09:17.517-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-2] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: valor: El valor del plan es obligatorio.
+2026-05-17T14:09:22.246-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-3] c.p.ms_plan.controller.PlanController    : Solicitud recibida para obtener todos los planes
+2026-05-17T14:09:22.247-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-3] c.p.ms_plan.service.PlanService          : Iniciando obtencion de todos los planes
+2026-05-17T14:09:22.251-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-3] c.p.ms_plan.controller.PlanController    : Obtenidos 5 planes
+2026-05-17T14:10:19.066-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-4] c.p.m.exception.GlobalExceptionHandler   : Error de validacion en RequestBody
+2026-05-17T14:10:19.066-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-4] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: nombre: El nombre del plan es obligatorio.
+2026-05-17T14:10:19.067-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-4] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: duracion: La duración en días es obligatoria.
+2026-05-17T14:10:19.067-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-4] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: beneficios: Los beneficios del plan son obligatorios.
+2026-05-17T14:10:19.067-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-4] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: valor: El valor del plan es obligatorio.
+2026-05-17T14:10:33.612-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-5] c.p.ms_plan.controller.PlanController    : Solicitud recibida para obtener todos los planes
+2026-05-17T14:10:33.613-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-5] c.p.ms_plan.service.PlanService          : Iniciando obtencion de todos los planes
+2026-05-17T14:10:33.616-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-5] c.p.ms_plan.controller.PlanController    : Obtenidos 5 planes
+2026-05-17T14:10:37.874-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-6] c.p.ms_plan.controller.PlanController    : Solicitud recibida para obtener plan con ID: 7
+2026-05-17T14:10:37.876-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-6] c.p.ms_plan.service.PlanService          : Iniciando obtencion de plan con ID: 7
+2026-05-17T14:10:37.888-04:00 ERROR 5656 --- [ms-plan] [http-nio-8082-exec-6] c.p.ms_plan.service.PlanService          : Error al obtener plan: El ID 7 no existe.
+2026-05-17T14:10:37.890-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-6] c.p.m.exception.GlobalExceptionHandler   : Error de recurso no encontrado: El plan con ID 7 no existe.
+2026-05-17T14:11:31.744-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-7] c.p.m.exception.GlobalExceptionHandler   : Error de metodo HTTP, es invalido para esta ruta
+2026-05-17T14:11:35.735-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-8] c.p.ms_plan.controller.PlanController    : Solicitud recibida para crear plan: Plan Trimestral VIP
+2026-05-17T14:11:35.736-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-8] c.p.ms_plan.service.PlanService          : Iniciando registro de nuevo plan: 'Plan Trimestral VIP' con valor de $75000
+2026-05-17T14:11:35.762-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-8] c.p.ms_plan.service.PlanService          : Plan guardado con exito. Nuevo ID asignado: 6
+2026-05-17T14:11:47.218-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-9] c.p.ms_plan.controller.PlanController    : Solicitud recibida para crear plan: Pase Diario Express
+2026-05-17T14:11:47.218-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-9] c.p.ms_plan.service.PlanService          : Iniciando registro de nuevo plan: 'Pase Diario Express' con valor de $5000
+2026-05-17T14:11:47.221-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-9] c.p.ms_plan.service.PlanService          : Plan guardado con exito. Nuevo ID asignado: 7
+2026-05-17T14:12:00.148-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-10] c.p.ms_plan.controller.PlanController    : Solicitud recibida para actualizar plan con ID: 1
+2026-05-17T14:12:00.149-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-10] c.p.ms_plan.service.PlanService          : Iniciando actualizacion de plan con ID: 1
+2026-05-17T14:12:00.152-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-10] c.p.ms_plan.service.PlanService          : Plan con ID 1 actualizado con exito.
+2026-05-17T14:12:00.167-04:00  INFO 5656 --- [ms-plan] [http-nio-8082-exec-10] c.p.ms_plan.controller.PlanController    : Plan con ID 1 modificado exitosamente.
+2026-05-17T14:12:36.639-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-1] c.p.m.exception.GlobalExceptionHandler   : Error de validacion en RequestBody
+2026-05-17T14:12:36.640-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-1] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: valor: El valor mínimo de un plan debe ser de $5.000.
+2026-05-17T14:12:36.640-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-1] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: nombre: El nombre del plan es obligatorio.
+2026-05-17T14:12:36.640-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-1] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: nombre: El nombre del plan debe tener entre 3 y 50 caracteres.
+2026-05-17T14:12:36.640-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-1] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: duracion: La duracion minima debe ser de al menos 1 dia.
+2026-05-17T14:12:36.640-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-1] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: nombre: El nombre del plan solo puede contener letras, numeros y espacios.
+2026-05-17T14:12:45.832-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-2] c.p.m.exception.GlobalExceptionHandler   : Error de validacion en RequestBody
+2026-05-17T14:12:45.832-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-2] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: nombre: El nombre del plan debe tener entre 3 y 50 caracteres.
+2026-05-17T14:12:45.832-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-2] c.p.m.exception.GlobalExceptionHandler   : Parametro invalido: beneficios: Los beneficios deben tener entre 5 y 200 caracteres.
+2026-05-17T14:13:00.074-04:00  WARN 5656 --- [ms-plan] [http-nio-8082-exec-3] c.p.m.exception.GlobalExceptionHandler   : Error de HTTP JSON, no se encuentra o es invalido
+2026-05-17T14:13:58.077-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T14:18:58.090-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T14:23:58.094-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T14:28:58.598-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T16:23:38.358-04:00  WARN 5656 --- [ms-plan] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h54m41s306ms515µs500ns).
+2026-05-17T16:28:09.415-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T16:29:05.968-04:00  WARN 5656 --- [ms-plan] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s535ms202µs200ns).
+2026-05-17T16:33:36.957-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T16:38:36.961-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T16:43:36.971-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T16:48:36.981-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T16:53:36.985-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T16:58:37.001-04:00  INFO 5656 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:02:17.711-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-PLAN with eureka with status DOWN
+2026-05-17T17:02:17.712-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779051737712, current=DOWN, previous=UP]
+2026-05-17T17:02:17.712-04:00  INFO 5656 --- [ms-plan] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082: registering service...
+2026-05-17T17:02:17.724-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-17T17:02:17.733-04:00  INFO 5656 --- [ms-plan] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082 - registration status: 204
+2026-05-17T17:02:17.735-04:00  INFO 5656 --- [ms-plan] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-17T17:02:17.747-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T17:02:17.754-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-17T17:02:17.758-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-17T17:02:17.760-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-05-17T17:02:20.767-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-05-17T17:02:20.784-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082 - deregister  status: 200
+2026-05-17T17:02:20.785-04:00  INFO 5656 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-05-17T17:02:26.302-04:00  INFO 13608 --- [ms-plan] [main] c.p.ms_plan.MsPlanApplication            : Starting MsPlanApplication using Java 21.0.10 with PID 13608 (C:\Users\javie\OneDrive\Escritorio\proyecto semestral\ms_plan\target\classes started by javie in C:\Users\javie\OneDrive\Escritorio\proyecto semestral\ms_plan)
+2026-05-17T17:02:26.304-04:00  INFO 13608 --- [ms-plan] [main] c.p.ms_plan.MsPlanApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-05-17T17:02:27.036-04:00  INFO 13608 --- [ms-plan] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-17T17:02:27.195-04:00  INFO 13608 --- [ms-plan] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
+2026-05-17T17:02:27.440-04:00  INFO 13608 --- [ms-plan] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ea738f8e-4e88-3165-b6de-6e18335bb8f7
+2026-05-17T17:02:27.904-04:00  INFO 13608 --- [ms-plan] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-05-17T17:02:27.918-04:00  INFO 13608 --- [ms-plan] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-17T17:02:27.918-04:00  INFO 13608 --- [ms-plan] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-05-17T17:02:27.984-04:00  INFO 13608 --- [ms-plan] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-17T17:02:27.985-04:00  INFO 13608 --- [ms-plan] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1602 ms
+2026-05-17T17:02:28.135-04:00  INFO 13608 --- [ms-plan] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-17T17:02:28.207-04:00  INFO 13608 --- [ms-plan] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-05-17T17:02:28.246-04:00  INFO 13608 --- [ms-plan] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-17T17:02:28.538-04:00  INFO 13608 --- [ms-plan] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-17T17:02:28.570-04:00  INFO 13608 --- [ms-plan] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-17T17:02:28.707-04:00  INFO 13608 --- [ms-plan] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25ea068e
+2026-05-17T17:02:28.709-04:00  INFO 13608 --- [ms-plan] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-17T17:02:28.749-04:00  WARN 13608 --- [ms-plan] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-17T17:02:28.753-04:00  WARN 13608 --- [ms-plan] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-17T17:02:28.773-04:00  INFO 13608 --- [ms-plan] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-17T17:02:29.567-04:00  INFO 13608 --- [ms-plan] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-17T17:02:29.635-04:00  INFO 13608 --- [ms-plan] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T17:02:29.856-04:00  WARN 13608 --- [ms-plan] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-17T17:02:30.246-04:00  INFO 13608 --- [ms-plan] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-05-17T17:02:30.273-04:00  WARN 13608 --- [ms-plan] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-17T17:02:30.311-04:00  INFO 13608 --- [ms-plan] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-17T17:02:30.331-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-17T17:02:30.333-04:00  INFO 13608 --- [ms-plan] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:02:30.340-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-17T17:02:30.341-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-17T17:02:30.341-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-17T17:02:30.341-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-17T17:02:30.341-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-17T17:02:30.341-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-17T17:02:30.341-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-17T17:02:30.650-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-17T17:02:30.651-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-17T17:02:30.653-04:00  INFO 13608 --- [ms-plan] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-17T17:02:30.654-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779051750653 with initial instances count: 3
+2026-05-17T17:02:30.658-04:00  INFO 13608 --- [ms-plan] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-PLAN with eureka with status UP
+2026-05-17T17:02:30.658-04:00  INFO 13608 --- [ms-plan] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779051750658, current=UP, previous=STARTING]
+2026-05-17T17:02:30.659-04:00  INFO 13608 --- [ms-plan] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082: registering service...
+2026-05-17T17:02:30.682-04:00  INFO 13608 --- [ms-plan] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2026-05-17T17:02:30.683-04:00  INFO 13608 --- [ms-plan] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-05-17T17:02:30.693-04:00  INFO 13608 --- [ms-plan] [main] c.p.ms_plan.MsPlanApplication            : Started MsPlanApplication in 4.961 seconds (process running for 5.816)
+2026-05-17T17:02:30.696-04:00  INFO 13608 --- [ms-plan] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082 - registration status: 204
+2026-05-17T17:02:33.136-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-17T17:02:33.136-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-17T17:02:33.137-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-17T17:02:33.168-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-1] c.p.ms_plan.controller.PlanController    : Solicitud recibida para obtener todos los planes
+2026-05-17T17:02:33.174-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-1] c.p.ms_plan.service.PlanService          : Iniciando obtencion de todos los planes
+2026-05-17T17:02:33.351-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-1] c.p.ms_plan.controller.PlanController    : Obtenidos 7 planes
+2026-05-17T17:07:30.353-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:12:30.356-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:17:30.370-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:22:30.381-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:27:30.383-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:29:20.590-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-3] c.p.ms_plan.controller.PlanController    : Solicitud recibida para obtener plan con ID: 1
+2026-05-17T17:29:20.591-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-3] c.p.ms_plan.service.PlanService          : Iniciando obtencion de plan con ID: 1
+2026-05-17T17:29:20.604-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-3] c.p.ms_plan.controller.PlanController    : Obtenido plan con ID: 1
+2026-05-17T17:32:30.387-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:36:43.949-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-5] c.p.ms_plan.controller.PlanController    : Solicitud recibida para obtener plan con ID: 1
+2026-05-17T17:36:43.950-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-5] c.p.ms_plan.service.PlanService          : Iniciando obtencion de plan con ID: 1
+2026-05-17T17:36:43.951-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-5] c.p.ms_plan.controller.PlanController    : Obtenido plan con ID: 1
+2026-05-17T17:36:48.807-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-6] c.p.ms_plan.controller.PlanController    : Solicitud recibida para obtener plan con ID: 1
+2026-05-17T17:36:48.808-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-6] c.p.ms_plan.service.PlanService          : Iniciando obtencion de plan con ID: 1
+2026-05-17T17:36:48.811-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-6] c.p.ms_plan.controller.PlanController    : Obtenido plan con ID: 1
+2026-05-17T17:36:50.156-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-7] c.p.ms_plan.controller.PlanController    : Solicitud recibida para obtener plan con ID: 1
+2026-05-17T17:36:50.157-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-7] c.p.ms_plan.service.PlanService          : Iniciando obtencion de plan con ID: 1
+2026-05-17T17:36:50.160-04:00  INFO 13608 --- [ms-plan] [http-nio-8082-exec-7] c.p.ms_plan.controller.PlanController    : Obtenido plan con ID: 1
+2026-05-17T17:37:30.390-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:42:30.402-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:47:30.425-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:52:30.431-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T17:57:30.437-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T18:02:30.443-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T18:07:30.455-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T18:12:30.465-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T18:17:30.480-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T18:22:30.489-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T18:27:30.508-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T18:32:30.528-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T18:37:30.531-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:12:45.492-04:00  WARN 13608 --- [ms-plan] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m15s158ms170µs700ns).
+2026-05-17T19:15:15.700-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:20:15.708-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:25:15.719-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:30:15.725-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:35:15.726-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:40:15.739-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:45:15.741-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:50:15.744-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:55:15.758-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:00:15.780-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:05:15.792-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:10:15.808-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T21:01:52.966-04:00  INFO 13608 --- [ms-plan] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T21:01:53.599-04:00  WARN 13608 --- [ms-plan] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47m7s145ms118µs900ns).
+2026-05-17T21:05:24.413-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-PLAN with eureka with status DOWN
+2026-05-17T21:05:24.414-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779066324414, current=DOWN, previous=UP]
+2026-05-17T21:05:24.414-04:00  INFO 13608 --- [ms-plan] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082: registering service...
+2026-05-17T21:05:24.428-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-17T21:05:24.430-04:00  INFO 13608 --- [ms-plan] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082 - registration status: 204
+2026-05-17T21:05:24.441-04:00  INFO 13608 --- [ms-plan] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-17T21:05:24.454-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T21:05:24.465-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-17T21:05:24.468-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-17T21:05:24.469-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-05-17T21:05:27.471-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-05-17T21:05:27.488-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PLAN/JAVIER:ms-plan:8082 - deregister  status: 200
+2026-05-17T21:05:27.489-04:00  INFO 13608 --- [ms-plan] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
